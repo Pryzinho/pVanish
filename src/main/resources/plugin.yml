@@ -1,0 +1,12 @@
+name: pVanish
+version: '${project.version}'
+main: br.pry.vanish.main.VanishMain
+api-version: '1.20'
+softdepend:
+  - nLogin
+  - MMOProfiles
+authors: [Pry]
+description: Um plugin de invisibilidade para equipe do servidor
+commands:
+  vanish:
+    description: Alterna a visibilidade

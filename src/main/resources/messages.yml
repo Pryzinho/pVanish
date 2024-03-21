@@ -1,0 +1,15 @@
+# O sistema atual suporta somente o formato de cor Kyori e usa placeholders customizados,
+# no futuro está planejado o suporte para PlaceholderAPI e formatos legacy de cor(&).
+ONLY_PLAYER: "<red>Somente jogadores podem utilizar esse comando."
+NO_PERMISSION: "<red>Você não tem permissão para usar esse comando."
+COMMAND_USAGE: "<red>Use: /vanish <aqua>ou <red>/vanish [jogador]"
+TARGET_OFFLINE: "<red>Esse jogador está offline ou não existe."
+BLOCKED_NORMAL_PLAYERS: "<red>Somente membros da equipe podem ficar invisivel."
+SWITCHED_BY_OTHERS: "<aqua>O membro da equipe <yellow>{dispatcher}<aqua> alternou sua visibilidade."
+SWITCH_VANISH_OTHERS: "<aqua>Você alterou a visibilidade do membro da equipe <yellow>{target}"
+PLUGIN_RELOADED: "<aqua>Configurações recarregadas com sucesso."
+NOW_VISIBLE: "<aqua>Você está visível para todos os jogadores."
+NOW_VANISHED: "<aqua>Você está invisível para todos os jogadores."
+VANISHED_ACTIONBAR: "<green>Você está invisível"
+PERSISTENT_VANISHED_ACTIONBAR: "<red>Lembre-se <green>você está invisível"
+VISIBLE_ACTIONBAR: "<red>Você está visível"

@@ -1,0 +1,35 @@
+# Define quando o plugin deve aplicar a invisibilidade dos membros da equipe em um jogador que entrou.
+# BUKKIT - Vai usar o evento padrão do Bukkit aos jogadores entrarem (PlayerLoginEvent)
+# NLOGIN - Vai esperar o jogador se autenticar(registrar e logar) com sucesso com base no plugin nLogin.
+# MMOPROFILES - Vai esperar o jogador escolher um perfil ou criar um novo.
+applyOrder: BUKKIT
+
+# Recursos especiais do plugin.
+features:
+  #--- Comentário do Dev: Todos esses features ainda precisam ser desenvolvidos;
+  # Deixa o membro da equipe completamente equipe e simula seu nome no tab como se ele estivesse online mas visivel em algum canto.
+  # Isso serve somente para tentar enganar usuários maliciosos que pensam que por está vendo no TAB signifique que o Staff
+  # não está perto dele ou lhe observando.
+  # Caso ativo (true) esse recurso se torna optativo de quem está usando o comando.
+  fake-online: true
+  # Veja (https://minecraft.wiki/w/Action_bar) para saber o que é uma actionbar.
+  actionbar:
+    # Actionbar mandada para o membro quando ele ficar invisível.
+    vanished:
+      # Define se esse recurso está ou não ativo.
+      enabled: true
+      # Define se a actionbar enviada vai ser permanente (até que ele saia do modo invisível).
+      persistent: true
+    # Actionbar mandada para o membro quando ele ficar visível;
+    visible: true
+
+# Troque as permissões e aliases dos comandos.
+# Obs: Altere somente as permissões e aliases do comando! Jamais altere o ID dele, ex. vanish:
+commands:
+  vanish:
+    # Essa permissão também define que jogadores estão imunes a invisibilidade, no geral é a permissao para definir um membro da equipe.
+    permission: pry.vanish.use
+    # Permissão para alternar a visibilidade de outros jogadores.
+    others: pry.vanish.others
+    # Caso nao deseje nenhum aliases deixe apenas: []
+    aliases: [ v ]
